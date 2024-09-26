@@ -3,7 +3,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 import time
 
-PHONE="8124174607"
+PHONE="PHONE_NO."
 
 options = webdriver.ChromeOptions()
 options.add_experimental_option("detach", True)
@@ -19,9 +19,9 @@ sign_in.click()
 time.sleep(2)
 #login
 mail=driver.find_element(by=By.ID,value="username")
-mail.send_keys("a.r.aravi361@gmail.com")
+mail.send_keys("EMAIL_ID)
 password=driver.find_element(by=By.ID,value="password")
-password.send_keys("Shaara@07",Keys.ENTER)
+password.send_keys("PASSWORD",Keys.ENTER)
 
 
 #apply jobs
